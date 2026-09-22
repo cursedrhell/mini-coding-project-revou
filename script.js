@@ -89,9 +89,9 @@ document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right').forEach(el 
 const statData = [
   { id: 'stat-constructors', target: 16 },
   { id: 'stat-drivers',      target: 15 },
-  { id: 'stat-wins',         target: 243 },
-  { id: 'stat-seasons',      target: 74 },
-  { id: 'stat-podiums',      target: 800 },
+  { id: 'stat-wins',         target: 250 },
+  { id: 'stat-seasons',      target: 77 },
+  { id: 'stat-podiums',      target: 845 },
 ];
 
 function animateCounter(el, target, duration = 1800) {
