@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scuderia Ferrari — Formula 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <svg class="prancing-horse" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Ferrari Prancing Horse">
+          <path d="M30 5 C20 5 10 15 12 28 C8 30 5 35 8 42 C10 48 16 50 22 48 C24 55 28 62 30 65 C32 62 36 55 38 48 C44 50 50 48 52 42 C55 35 52 30 48 28 C50 15 40 5 30 5Z" fill="#FFD700" stroke="#FFD700" stroke-width="1"/>
+        </svg>
+        <span class="nav-brand">SCUDERIA FERRARI</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#stats">Statistik</a></li>
+        <li><a href="#history">Sejarah</a></li>
+        <li><a href="#drivers">Driver</a></li>
+        <li><a href="#cars">Mobil</a></li>
+        <li><a href="#season">Musim 2024</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="speed-lines" id="speedLines"></div>
+    <div class="hero-content">
+      <p class="hero-label reveal-up">Formula 1 · Since 1950</p>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="ferrari-red">SCUDERIA</span><br/>FERRARI
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        Tim paling ikonik dalam sejarah Formula 1. Merah. Cepat. Abadi.
+      </p>
+      <div class="hero-cta reveal-up delay-3">
+        <a href="#stats" class="btn btn-primary">Lihat Pencapaian</a>
+        <a href="#history" class="btn btn-outline">Sejarah Kami</a>
+      </div>
+    </div>
+    <div class="hero-car-container">
+      <div class="hero-car">🏎️</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- STATS BANNER -->
+  <section class="stats-banner" id="stats">
+    <div class="stats-inner">
+      <div class="stat-item" data-target="16">
+        <span class="stat-number" id="stat-constructors">0</span>
+        <span class="stat-label">Gelar Konstruktor</span>
+      </div>
+      <div class="stat-item" data-target="15">
+        <span class="stat-number" id="stat-drivers">0</span>
+        <span class="stat-label">Gelar Pembalap</span>
+      </div>
+      <div class="stat-item" data-target="243">
+        <span class="stat-number" id="stat-wins">0</span>
+        <span class="stat-label">Kemenangan Race</span>
+      </div>
+      <div class="stat-item" data-target="74">
+        <span class="stat-number" id="stat-seasons">0</span>
+        <span class="stat-label">Musim Kompetisi</span>
+      </div>
+      <div class="stat-item" data-target="800">
+        <span class="stat-number" id="stat-podiums">0</span>
+        <span class="stat-label">Podium</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY TIMELINE -->
+  <section class="section history-section" id="history">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Perjalanan Panjang</span>
+        <h2 class="section-title">Sejarah <span class="ferrari-red">Ferrari</span></h2>
+        <p class="section-desc">Dari mimpi Enzo Ferrari hingga menjadi tim paling bersejarah di F1.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1929</span>
+            <h3>Scuderia Ferrari Didirikan</h3>
+            <p>Enzo Ferrari mendirikan Scuderia Ferrari di Modena, Italia, awalnya sebagai tim balap untuk Alfa Romeo sebelum membangun mobilnya sendiri.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1950</span>
+            <h3>Debut di F1</h3>
+            <p>Ferrari mengikuti musim perdana Formula 1 World Championship dengan Ferrari 125 F1. Alberto Ascari memimpin tim di balik kemudi merah ikonik ini.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1952–53</span>
+            <h3>Dominasi Pertama</h3>
+            <p>Alberto Ascari memenangkan dua gelar juara dunia berturut-turut, memberikan Ferrari dominasi pertama mereka di Formula 1.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1961</span>
+            <h3>Phil Hill, Juara Amerika Pertama</h3>
+            <p>Phil Hill menjadi pembalap Amerika pertama yang memenangkan gelar F1, mengendarai Ferrari 156 yang dijuluki "Sharknose".</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1975–77</span>
+            <h3>Era Niki Lauda</h3>
+            <p>Niki Lauda membawa Ferrari dua gelar juara dunia. Kecelakaannya di Nürburgring 1976 dan comeback-nya yang heroik menjadi salah satu cerita terbesar dalam F1.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1988</span>
+            <h3>Wafatnya Enzo Ferrari</h3>
+            <p>Enzo Ferrari, sang pendiri dan jiwa dari tim, wafat pada usia 90 tahun. Warisan dan semangatnya terus hidup di setiap mobil yang mereka bangun.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1999–2004</span>
+            <h3>Dinasti Michael Schumacher</h3>
+            <p>Era paling dominan dalam sejarah Ferrari. Michael Schumacher memenangkan 5 gelar juara dunia berturut-turut (2000–2004), menjadikan Ferrari yang paling ditakuti di F1.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2007–08</span>
+            <h3>Era Kimi Räikkönen</h3>
+            <p>Kimi Räikkönen memenangkan gelar dunia 2007 dengan dramatis di lap terakhir GP Brasil. Fernandez Alonso bergabung di 2010 namun gagal membawa gelar.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022–Kini</span>
+            <h3>Kebangkitan dengan Leclerc & Sainz</h3>
+            <p>Charles Leclerc dan Carlos Sainz membawa Ferrari kembali kompetitif. Musim 2022 menjadi yang terbaik Ferrari dalam bertahun-tahun, bersaing ketat untuk gelar konstruktor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGENDARY DRIVERS -->
+  <section class="section drivers-section" id="drivers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Para Legenda</span>
+        <h2 class="section-title">Driver <span class="ferrari-red">Legendaris</span></h2>
+        <p class="section-desc">Nama-nama yang mengukir sejarah dengan warna merah Maranello.</p>
+      </div>
+
+      <div class="drivers-grid">
+        <div class="driver-card reveal-up" tabindex="0">
+          <div class="driver-number">#1</div>
+          <div class="driver-emoji">🏆</div>
+          <h3 class="driver-name">Michael Schumacher</h3>
+          <p class="driver-years">2000 – 2006</p>
+          <div class="driver-stats">
+            <div class="d-stat">
+              <span class="d-stat-val">5</span>
+              <span class="d-stat-label">Gelar bersama Ferrari</span>
+            </div>
+            <div class="d-stat">
+              <span class="d-stat-val">72</span>
+              <span class="d-stat-label">Menang bersama Ferrari</span>
+            </div>
+          </div>
+          <p class="driver-desc">Pembalap paling dominan dalam sejarah Ferrari. Bersama Jean Todt dan Ross Brawn, ia membangun dinasti yang belum tertandingi.</p>
+        </div>
+
+        <div class="driver-card reveal-up delay-1" tabindex="0">
+          <div class="driver-number">#3</div>
+          <div class="driver-emoji">🧊</div>
+          <h3 class="driver-name">Niki Lauda</h3>
+          <p class="driver-years">1974 – 1977</p>
+          <div class="driver-stats">
+            <div class="d-stat">
+              <span class="d-stat-val">2</span>
+              <span class="d-stat-label">Gelar bersama Ferrari</span>
+            </div>
+            <div class="d-stat">
+              <span class="d-stat-val">15</span>
+              <span class="d-stat-label">Menang bersama Ferrari</span>
+            </div>
+          </div>
+          <p class="driver-desc">Legenda yang selamat dari kecelakaan mengerikan di Nürburgring dan kembali balapan hanya 42 hari kemudian. Simbol keberanian sejati.</p>
+        </div>
+
+        <div class="driver-card reveal-up delay-2" tabindex="0">
+          <div class="driver-number">#7</div>
+          <div class="driver-emoji">❄️</div>
+          <h3 class="driver-name">Kimi Räikkönen</h3>
+          <p class="driver-years">2007 – 2009, 2014 – 2018</p>
+          <div class="driver-stats">
+            <div class="d-stat">
+              <span class="d-stat-val">1</span>
+              <span class="d-stat-label">Gelar bersama Ferrari</span>
+            </div>
+            <div class="d-stat">
+              <span class="d-stat-val">21</span>
+              <span class="d-stat-label">Menang bersama Ferrari</span>
+            </div>
+          </div>
+          <p class="driver-desc">"The Iceman" — dingin, cepat, dan karismatik. Memenangkan gelar 2007 dengan cara paling dramatis di lap terakhir musim.</p>
+        </div>
+
+        <div class="driver-card reveal-up delay-3" tabindex="0">
+          <div class="driver-number">#16</div>
+          <div class="driver-emoji">🇲🇨</div>
+          <h3 class="driver-name">Charles Leclerc</h3>
+          <p class="driver-years">2019 – Sekarang</p>
+          <div class="driver-stats">
+            <div class="d-stat">
+              <span class="d-stat-val">8+</span>
+              <span class="d-stat-label">Menang bersama Ferrari</span>
+            </div>
+            <div class="d-stat">
+              <span class="d-stat-val">23</span>
+              <span class="d-stat-label">Tahun Lahir: 1997</span>
+            </div>
+          </div>
+          <p class="driver-desc">Generasi baru Ferrari. Leclerc dari Monaco ini adalah harapan terbesar Ferrari untuk kembali meraih gelar konstruktor dan pembalap.</p>
+        </div>
+
+        <div class="driver-card reveal-up delay-4" tabindex="0">
+          <div class="driver-number">#55</div>
+          <div class="driver-emoji">🇪🇸</div>
+          <h3 class="driver-name">Carlos Sainz</h3>
+          <p class="driver-years">2021 – 2024</p>
+          <div class="driver-stats">
+            <div class="d-stat">
+              <span class="d-stat-val">3</span>
+              <span class="d-stat-label">Menang bersama Ferrari</span>
+            </div>
+            <div class="d-stat">
+              <span class="d-stat-val">27</span>
+              <span class="d-stat-label">Tahun Lahir: 1994</span>
+            </div>
+          </div>
+          <p class="driver-desc">Konsisten dan cerdas. Sainz membawa Ferrari kemenangan di Singapura 2023, salah satu momen terbaik era modern Ferrari.</p>
+        </div>
+
+        <div class="driver-card reveal-up delay-5" tabindex="0">
+          <div class="driver-number">#44</div>
+          <div class="driver-emoji">🇬🇧</div>
+          <h3 class="driver-name">Lewis Hamilton</h3>
+          <p class="driver-years">2025 – Sekarang</p>
+          <div class="driver-stats">
+            <div class="d-stat">
+              <span class="d-stat-val">—</span>
+              <span class="d-stat-label">Gelar bersama Ferrari</span>
+            </div>
+            <div class="d-stat">
+              <span class="d-stat-val">7</span>
+              <span class="d-stat-label">Total Gelar Dunia</span>
+            </div>
+          </div>
+          <p class="driver-desc">Perpindahan paling menggemparkan dalam sejarah F1. Juara dunia 7x itu kini mengenakan warna merah Ferrari, mimpi yang menjadi kenyataan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ICONIC CARS -->
+  <section class="section cars-section" id="cars">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Mesin & Teknologi</span>
+        <h2 class="section-title">Mobil <span class="ferrari-red">Ikonik</span></h2>
+        <p class="section-desc">Karya teknik terbaik dari Maranello.</p>
+      </div>
+
+      <div class="cars-tabs">
+        <button class="car-tab active" data-car="f2004" aria-pressed="true">F2004</button>
+        <button class="car-tab" data-car="f1975" aria-pressed="false">312T (1975)</button>
+        <button class="car-tab" data-car="f156" aria-pressed="false">156 (1961)</button>
+        <button class="car-tab" data-car="sf23" aria-pressed="false">SF-23 (2023)</button>
+        <button class="car-tab" data-car="sf25" aria-pressed="false">SF-25 (2025)</button>
+      </div>
+
+      <div class="car-display">
+        <div class="car-info" id="carInfo">
+          <div class="car-visual" id="carVisual">🏎️</div>
+          <div class="car-details" id="carDetails">
+            <h3 id="carName">Ferrari F2004</h3>
+            <p id="carYear">Musim: 2004</p>
+            <p id="carDesc">Dianggap sebagai salah satu mobil F1 terbaik sepanjang masa. Michael Schumacher memenangkan 13 dari 18 balapan musim itu, dengan Ferrari meraih gelar konstruktor ke-6 berturut-turut.</p>
+            <div class="car-specs">
+              <div class="spec-item"><span class="spec-label">Mesin</span><span class="spec-val" id="carEngine">3.0L V10</span></div>
+              <div class="spec-item"><span class="spec-label">Tenaga</span><span class="spec-val" id="carPower">900+ hp</span></div>
+              <div class="spec-item"><span class="spec-label">Top Speed</span><span class="spec-val" id="carSpeed">~370 km/h</span></div>
+              <div class="spec-item"><span class="spec-label">Driver</span><span class="spec-val" id="carDriver">Schumacher / Barrichello</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2024 SEASON -->
+  <section class="section season-section" id="season">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Musim Terkini</span>
+        <h2 class="section-title">Ferrari <span class="ferrari-red">2024</span></h2>
+        <p class="section-desc">Perjuangan Leclerc dan Sainz di musim terakhir mereka bersama.</p>
+      </div>
+
+      <div class="season-grid">
+        <div class="season-card highlight reveal-up">
+          <div class="season-pos">3rd</div>
+          <h3>Klasemen Konstruktor</h3>
+          <p>Ferrari finis di posisi ke-3 klasemen konstruktor 2024, di belakang Red Bull dan McLaren, dengan total poin 652.</p>
+        </div>
+        <div class="season-card reveal-up delay-1">
+          <div class="season-icon">🏁</div>
+          <h3>5 Kemenangan</h3>
+          <p>Leclerc menang 3 kali (Monaco, Monza, Las Vegas), Sainz menang 2 kali (Australia, Meksiko) sepanjang musim 2024.</p>
+        </div>
+        <div class="season-card reveal-up delay-2">
+          <div class="season-icon">🔄</div>
+          <h3>Pergantian Driver</h3>
+          <p>Carlos Sainz keluar, digantikan Lewis Hamilton mulai musim 2025. Perpindahan paling bersejarah dalam F1 modern.</p>
+        </div>
+        <div class="season-card reveal-up delay-3">
+          <div class="season-icon">🛠️</div>
+          <h3>Upgrade Mesin</h3>
+          <p>Mesin baru Ferrari di paruh kedua musim 2024 terbukti kompetitif, menjadi dasar pengembangan untuk musim 2025.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <div class="quote-inner">
+      <blockquote class="big-quote reveal-up">
+        "When you work for Ferrari, you work for the most famous racing team in the world — and that is the truth."
+      </blockquote>
+      <cite class="quote-author reveal-up delay-1">— Enzo Ferrari</cite>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">🐴</span>
+        <span>SCUDERIA FERRARI</span>
+      </div>
+      <p class="footer-tagline">Forza Ferrari. Sempre.</p>
+      <p class="footer-copy">© 2025 Fan Site · Dibuat dengan ❤️ untuk Tifosi di seluruh dunia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
